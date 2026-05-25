@@ -219,6 +219,7 @@ def build_pdf():
     story.append(Paragraph("Artigos Completos Publicados em Periódicos:", style_item_title))
     story.append(Paragraph("&bull; OITAVEN, L. P. C.; Ribeiro., S.R ; de Moura, G.J.B ; Oliveira., J.B. Parasites of <i>Gymnodactylus darwinii</i> Gray, 1845 (Squamata, Phyllodactylidae) from an Atlantic Rainforest fragment. <b>ACTA TROPICA</b>, v. 192, p. 123-128, 2019.", style_bullet))
     story.append(Paragraph("&bull; OITAVEN, L. P. C.; Ribeiro., S.R ; RIBEIRO, L. B. ; de Moura, G.J.B. <i>Gymnodactylus darwinii</i> (Darwin's Gecko). Eggs and Hatchlings. <b>HERPETOLOGICAL REVIEW</b>, v. 50, p. 140-141, 2019.", style_bullet))
+    story.append(Paragraph("&bull; OITAVEN, L. P. C.; de Moura, G. J. B. ; RIBEIRO, F. S. ; LISBOA, E. B. F. ; OLIVEIRA, J. B. Nematodes of <i>Amphisbaena vermicularis</i> Wagler, 1824 (Squamata, Amphisbaenidae) from Brazilian Atlantic Forest remnants. <b>JOURNAL OF NATURAL HISTORY</b>, v. 55, p. 1227-1236, 2021.", style_bullet))
 
     story.append(Paragraph("Capítulos de Livros Publicados:", style_item_title))
     story.append(Paragraph("&bull; OITAVEN, L. P. C. et al. As Serpentes da Ilha de Paulo Afonso - Bahia, Nordeste do Brasil. In: <i>Vertebrados Terrestres da Ilha de Paulo Afonso...</i> 1ed. Recife: EDUFRPE, 2017, v. 1, p. 159-192.", style_bullet))
