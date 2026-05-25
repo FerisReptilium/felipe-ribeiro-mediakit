@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Ribeiro | Cloud Engineering & ADS Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio profissional de Felipe da Silva Ribeiro. Especialista em Cloud Computing (AWS), IoT, DevOps e Análise e Desenvolvimento de Sistemas.">
+  <meta name="keywords" content="Felipe Ribeiro, Cloud Computing, AWS, DevOps, IoT, ADS, Portfolio, Media Kit, São Paulo, Terraform">
+  <meta name="author" content="Felipe da Silva Ribeiro">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Felipe Ribeiro | Cloud Engineering & ADS">
+  <meta property="og:description" content="Portfolio profissional e interativo. Conheça meus projetos de Cloud AWS, IoT e DevOps.">
+  <meta property="og:image" content="assets/cloud_bg.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-pt dark-theme">
+  <!-- Dynamic Glowing Background Effects -->
+  <div class="glow-bg">
+    <div class="glow-sphere sphere-1"></div>
+    <div class="glow-sphere sphere-2"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-accent">&lt;</span>Felipe.Ribeiro<span class="logo-accent"> /&gt;</span>
+      </div>
+      <nav class="nav">
+        <a href="#about" class="nav-link"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
+        <a href="#skills" class="nav-link"><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></a>
+        <a href="#experience" class="nav-link"><span class="lang-pt">Experiência</span><span class="lang-en">Experience</span></a>
+        <a href="#projects" class="nav-link"><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></a>
+        <a href="#certifications" class="nav-link"><span class="lang-pt">Certificados</span><span class="lang-en">Certifications</span></a>
+      </nav>
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <button id="langToggle" class="btn-icon" aria-label="Alterar idioma" title="Mudar Idioma / Change Language">
+          <span class="lang-flag pt-flag">🇧🇷</span>
+          <span class="lang-flag en-flag">🇺🇸</span>
+        </button>
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="btn-icon" aria-label="Alternar tema" title="Alternar Tema / Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <!-- Print / PDF Resume -->
+        <button onclick="window.print()" class="btn btn-primary btn-sm btn-print">
+          <i data-lucide="download"></i>
+          <span>PDF Resume</span>
+        </button>
+      </div>
+      <!-- Mobile menu trigger -->
+      <button class="mobile-menu-toggle" aria-label="Abrir menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-accent">&lt;</span>Felipe.R<span class="logo-accent"> /&gt;</span>
+      </div>
+      <button class="mobile-menu-close"><i data-lucide="x"></i></button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="#about" class="mobile-link"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
+      <a href="#skills" class="mobile-link"><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></a>
+      <a href="#experience" class="mobile-link"><span class="lang-pt">Experiência</span><span class="lang-en">Experience</span></a>
+      <a href="#projects" class="mobile-link"><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></a>
+      <a href="#certifications" class="mobile-link"><span class="lang-pt">Certificados</span><span class="lang-en">Certifications</span></a>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section section-padding">
+      <div class="container hero-grid">
+        <div class="hero-text-container">
+          <div class="badge-accent">
+            <i data-lucide="sparkles"></i>
+            <span class="lang-pt">Disponível para Oportunidades</span>
+            <span class="lang-en">Open to Opportunities</span>
+          </div>
+          <h1 class="hero-title">Felipe da Silva Ribeiro</h1>
+          <p class="hero-subtitle">
+            <span class="lang-pt">Cloud Computing &bull; DevOps &bull; ADS Graduando</span>
+            <span class="lang-en">Cloud Computing &bull; DevOps &bull; ADS Undergrad</span>
+          </p>
+          <div class="hero-location">
+            <i data-lucide="map-pin"></i>
+            <span>São Paulo/SP, Brasil</span>
+          </div>
+
+          <!-- Contact Quick Action Bar -->
+          <div class="contact-actions-bar">
+            <div class="contact-card cursor-pointer" onclick="copyContact('felipewolf.recife@gmail.com', 'E-mail copiado!', 'Email copied!')" title="Clique para copiar">
+              <i data-lucide="mail"></i>
+              <div class="contact-card-info">
+                <span class="label">E-mail</span>
+                <span class="value">felipewolf.recife@gmail.com</span>
+              </div>
+              <i data-lucide="copy" class="copy-icon"></i>
+            </div>
+            
+            <div class="contact-card cursor-pointer" onclick="copyContact('+5511921909149', 'Telefone copiado!', 'Phone copied!')" title="Clique para copiar">
+              <i data-lucide="phone"></i>
+              <div class="contact-card-info">
+                <span class="label"><span class="lang-pt">Telefone 1</span><span class="lang-en">Phone 1</span></span>
+                <span class="value">(11) 92190-9149</span>
+              </div>
+              <i data-lucide="copy" class="copy-icon"></i>
+            </div>
+
+            <div class="contact-card cursor-pointer" onclick="copyContact('+5511948396848', 'Telefone copiado!', 'Phone copied!')" title="Clique para copiar">
+              <i data-lucide="phone"></i>
+              <div class="contact-card-info">
+                <span class="label"><span class="lang-pt">Telefone 2</span><span class="lang-en">Phone 2</span></span>
+                <span class="value">(11) 94839-6848</span>
+              </div>
+              <i data-lucide="copy" class="copy-icon"></i>
+            </div>
+          </div>
+
+          <!-- Social Shortcuts -->
+          <div class="hero-buttons">
+            <a href="https://www.linkedin.com/in/felipe-ribeiro-634559252" target="_blank" class="btn btn-outline">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/FerisReptilium/FerisReptilium" target="_blank" class="btn btn-outline">
+              <i data-lucide="github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Photo Frame / Creative Visualizer -->
+        <div class="hero-visual">
+          <div class="photo-frame-container">
+            <div class="photo-glow-border"></div>
+            <div class="photo-frame">
+              <!-- Profile Avatar -->
+              <img src="assets/profile_avatar.png" alt="Felipe da Silva Ribeiro Avatar" class="profile-photo">
+            </div>
+            <!-- Tech badges hovering around the frame -->
+            <div class="hover-badge badge-aws" title="AWS Core Competencies">
+              <i data-lucide="cloud"></i>
+              <span>AWS</span>
+            </div>
+            <div class="hover-badge badge-iot" title="IoT Specialist">
+              <i data-lucide="cpu"></i>
+              <span>IoT</span>
+            </div>
+            <div class="hover-badge badge-devops" title="DevOps Integration">
+              <i data-lucide="infinity"></i>
+              <span>DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="about" class="section-padding container">
+      <div class="glass-panel summary-panel">
+        <h2 class="section-heading">
+          <i data-lucide="user"></i>
+          <span class="lang-pt">Resumo Profissional</span>
+          <span class="lang-en">Professional Summary</span>
+        </h2>
+        <div class="summary-content text-gradient">
+          <p class="lang-pt">
+            Cursando Análise e Desenvolvimento de Sistemas no IFPE, com conhecimentos em administração de sistemas Linux e Windows e experiência prática em nuvem (AWS). Participei de projetos de inovação acadêmica aplicando automação com IoT para detecção de parâmetros ecológicos da água em piscicultura familiar. Possuo interesse e foco dedicados a infraestrutura em nuvem, análise de dados e automação. Busco minha primeira oportunidade profissional em tecnologia, onde possa aplicar minhas qualificações técnicas, evoluir estrategicamente e agregar valor a projetos inovadores.
+          </p>
+          <p class="lang-en">
+            Currently pursuing an Associate's Degree in Systems Analysis and Development at IFPE, backed by knowledge in Windows and Linux server environments and hands-on Cloud experience with AWS. Contributed to academic innovation projects utilizing IoT automation to detect environmental parameters in aquaculture systems. My primary focus lies in Cloud Infrastructure, Data Analysis, and DevOps pipelines. I am actively seeking my first tech role to leverage my technical foundation, expand my skill set, and add business value to forward-thinking projects.
+          </p>
+        </div>
+        <div class="summary-highlights">
+          <div class="highlight-item">
+            <span class="highlight-number">AWS</span>
+            <span class="highlight-label"><span class="lang-pt">Cloud & Segurança</span><span class="lang-en">Cloud & Security</span></span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">IoT</span>
+            <span class="highlight-label"><span class="lang-pt">Automação & Sensores</span><span class="lang-en">Automation & Sensors</span></span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">ADS</span>
+            <span class="highlight-label"><span class="lang-pt">IFPE (Prev. 2027)</span><span class="lang-en">IFPE (Grad. 2027)</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section-padding container">
+      <div class="section-header-centered">
+        <h2 class="section-heading-center">
+          <span class="lang-pt">Competências Técnicas & Comportamentais</span>
+          <span class="lang-en">Technical & Soft Skills</span>
+        </h2>
+        <p class="section-lead-text">
+          <span class="lang-pt">Clique nos botões de filtro para explorar as tecnologias que utilizo.</span>
+          <span class="lang-en">Click on the filter tabs to explore the technologies and skills I specialize in.</span>
+        </p>
+      </div>
+
+      <!-- Skills Filters -->
+      <div class="skills-filter-container">
+        <button class="filter-tab active" data-filter="all">
+          <span class="lang-pt">Todas</span><span class="lang-en">All Skills</span>
+        </button>
+        <button class="filter-tab" data-filter="cloud">
+          <span class="lang-pt">Cloud AWS</span><span class="lang-en">AWS Cloud</span>
+        </button>
+        <button class="filter-tab" data-filter="devops">
+          <span class="lang-pt">DevOps & Infra</span><span class="lang-en">DevOps & Infra</span>
+        </button>
+        <button class="filter-tab" data-filter="code">
+          <span class="lang-pt">Dev & Dados</span><span class="lang-en">Coding & Data</span>
+        </button>
+        <button class="filter-tab" data-filter="soft">
+          <span class="lang-pt">Comportamentais</span><span class="lang-en">Soft Skills</span>
+        </button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+        <!-- Cloud Systems -->
+        <div class="skill-card" data-category="cloud">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper purple-glow">
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3>Cloud Computing</h3>
+          </div>
+          <p class="skill-desc lang-pt">Serviços e conceitos básicos de infraestrutura virtualizada em nuvem.</p>
+          <p class="skill-desc lang-en">Cloud virtualization concepts and multi-region infrastructure setups.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS Cloud Practitioner</span>
+            <span class="skill-pill">Well-Architected</span>
+            <span class="skill-pill">Virtualization</span>
+          </div>
+        </div>
+
+        <!-- AWS Services -->
+        <div class="skill-card" data-category="cloud">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper blue-glow">
+              <i data-lucide="server"></i>
+            </div>
+            <h3>Serviços AWS</h3>
+          </div>
+          <p class="skill-desc lang-pt">Provisionamento de capacidade computacional, armazenamento e bases de dados gerenciadas.</p>
+          <p class="skill-desc lang-en">Provisioning scalable computing power, block storage, and managed databases.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">EC2</span>
+            <span class="skill-pill">S3</span>
+            <span class="skill-pill">RDS</span>
+            <span class="skill-pill">DynamoDB</span>
+            <span class="skill-pill">Lambda (Serverless)</span>
+          </div>
+        </div>
+
+        <!-- Cloud Security -->
+        <div class="skill-card" data-category="cloud">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper red-glow">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <h3>Segurança na Nuvem</h3>
+          </div>
+          <p class="skill-desc lang-pt">Administração de acesso, políticas de privilégio mínimo e criptografia de dados.</p>
+          <p class="skill-desc lang-en">Identity access management, least privilege policies, and data encryption.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS IAM</span>
+            <span class="skill-pill">KMS Criptografia</span>
+            <span class="skill-pill">AWS KMS</span>
+            <span class="skill-pill">CloudTrail Compliance</span>
+          </div>
+        </div>
+
+        <!-- DevOps & CI/CD -->
+        <div class="skill-card" data-category="devops">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper green-glow">
+              <i data-lucide="infinity"></i>
+            </div>
+            <h3>DevOps & Pipelines</h3>
+          </div>
+          <p class="skill-desc lang-pt">Automação de fluxos de deploy e entrega contínua integrados na AWS.</p>
+          <p class="skill-desc lang-en">Automation of deployment workflows and continuous delivery integrated into AWS.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS CodePipeline</span>
+            <span class="skill-pill">AWS CodeDeploy</span>
+            <span class="skill-pill">Git / Versioning</span>
+          </div>
+        </div>
+
+        <!-- Infrastructure as Code -->
+        <div class="skill-card" data-category="devops">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper cyan-glow">
+              <i data-lucide="blocks"></i>
+            </div>
+            <h3>Infraestrutura como Código</h3>
+          </div>
+          <p class="skill-desc lang-pt">Modelagem de recursos e automação declarativa de ambientes em nuvem.</p>
+          <p class="skill-desc lang-en">Declaring infrastructure blueprints and automation of multi-tier environments.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Terraform</span>
+            <span class="skill-pill">AWS CloudFormation</span>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="skill-card" data-category="devops">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper orange-glow">
+              <i data-lucide="network"></i>
+            </div>
+            <h3>Networking & Redes</h3>
+          </div>
+          <p class="skill-desc lang-pt">Isolamento de sub-redes, balanceamento de tráfego e regras de acesso de tráfego.</p>
+          <p class="skill-desc lang-en">Subnet isolation, route tables, load balancing, and firewall rule setups.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">VPC</span>
+            <span class="skill-pill">Subnets</span>
+            <span class="skill-pill">Load Balancers</span>
+            <span class="skill-pill">Security Groups</span>
+          </div>
+        </div>
+
+        <!-- Cloud Monitoring -->
+        <div class="skill-card" data-category="cloud">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper pink-glow">
+              <i data-lucide="activity"></i>
+            </div>
+            <h3>Monitoramento & Custos</h3>
+          </div>
+          <p class="skill-desc lang-pt">Monitoramento operacional de desempenho e otimização de faturamento de recursos.</p>
+          <p class="skill-desc lang-en">Operational health tracking, log analytics, and spending optimization.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS CloudWatch</span>
+            <span class="skill-pill">Trusted Advisor</span>
+            <span class="skill-pill">Cost Explorer</span>
+          </div>
+        </div>
+
+        <!-- Programming & Data -->
+        <div class="skill-card" data-category="code">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper yellow-glow">
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3>Desenvolvimento & Banco</h3>
+          </div>
+          <p class="skill-desc lang-pt">Scripts de automação, manipulação de bases relacionais e data warehousing.</p>
+          <p class="skill-desc lang-en">Automation scripting, relational database queries, and data warehousing.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">AWS Redshift</span>
+            <span class="skill-pill">Linux Bash Shell</span>
+          </div>
+        </div>
+
+        <!-- Machine Learning & AI -->
+        <div class="skill-card" data-category="code">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper purple-glow">
+              <i data-lucide="brain-circuit"></i>
+            </div>
+            <h3>Inteligência Artificial</h3>
+          </div>
+          <p class="skill-desc lang-pt">Integração de serviços pré-treinados de IA e pipeline no SageMaker.</p>
+          <p class="skill-desc lang-en">Integrating pre-trained computer vision and NLP models, and SageMaker pipelines.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS SageMaker</span>
+            <span class="skill-pill">AWS Rekognition</span>
+            <span class="skill-pill">AWS Polly</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills Grid Items -->
+        <div class="skill-card soft-skill-card" data-category="soft">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper green-glow">
+              <i data-lucide="users"></i>
+            </div>
+            <h3><span class="lang-pt">Trabalho & Colaboração</span><span class="lang-en">Collaboration</span></h3>
+          </div>
+          <p class="skill-desc lang-pt">Integração e articulação ágil com times multifuncionais focada em metas.</p>
+          <p class="skill-desc lang-en">Integrating into cross-functional agile teams to exceed shared product milestones.</p>
+          <div class="skill-pills">
+            <span class="skill-pill lang-pt">Trabalho em Equipe</span><span class="skill-pill lang-en">Teamwork</span>
+            <span class="skill-pill lang-pt">Comunicação Eficaz</span><span class="skill-pill lang-en">Effective Communication</span>
+            <span class="skill-pill lang-pt">Proatividade</span><span class="skill-pill lang-en">Proactivity</span>
+          </div>
+        </div>
+
+        <div class="skill-card soft-skill-card" data-category="soft">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper blue-glow">
+              <i data-lucide="lightbulb"></i>
+            </div>
+            <h3><span class="lang-pt">Pensamento & Resolução</span><span class="lang-en">Analytical Thinking</span></h3>
+          </div>
+          <p class="skill-desc lang-pt">Foco analítico em debugar problemas complexos e implementar soluções ágeis.</p>
+          <p class="skill-desc lang-en">Analytical approach to troubleshooting complex issues and building resilient designs.</p>
+          <div class="skill-pills">
+            <span class="skill-pill lang-pt">Resolução de Problemas</span><span class="skill-pill lang-en">Problem Solving</span>
+            <span class="skill-pill lang-pt">Pensamento Crítico</span><span class="skill-pill lang-en">Critical Thinking</span>
+            <span class="skill-pill lang-pt">Aprendizado Contínuo</span><span class="skill-pill lang-en">Continuous Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-card soft-skill-card" data-category="soft">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper orange-glow">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <h3><span class="lang-pt">Entrega & Resiliência</span><span class="lang-en">Execution & Delivery</span></h3>
+          </div>
+          <p class="skill-desc lang-pt">Adaptação ágil a mudanças tecnológicas focando em prazos e qualidade.</p>
+          <p class="skill-desc lang-en">Adapting swiftly to technical updates while sustaining top-tier delivery standards.</p>
+          <div class="skill-pills">
+            <span class="skill-pill lang-pt">Adaptação e Resiliência</span><span class="skill-pill lang-en">Resilience & Adaptability</span>
+            <span class="skill-pill lang-pt">Gestão do Tempo</span><span class="skill-pill lang-en">Time Management</span>
+            <span class="skill-pill lang-pt">Orientação para Resultados</span><span class="skill-pill lang-en">Results-Oriented</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section (Timeline) -->
+    <section id="experience" class="section-padding container">
+      <div class="timeline-section-grid">
+        <!-- Professional Work Timeline -->
+        <div>
+          <h2 class="section-heading">
+            <i data-lucide="briefcase"></i>
+            <span class="lang-pt">Experiência Profissional</span>
+            <span class="lang-en">Professional Experience</span>
+          </h2>
+          
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Mar/2024 - Dez/2024</div>
+              <div class="glass-panel timeline-card">
+                <h3 class="timeline-title">
+                  <span class="lang-pt">Estagiário de TI</span>
+                  <span class="lang-en">IT Intern</span>
+                </h3>
+                <h4 class="timeline-subtitle">Prefeitura de Igarassu</h4>
+                <ul class="timeline-list lang-pt">
+                  <li>Desenvolvimento, manutenção e otimização de sistemas internos de suporte governamental.</li>
+                  <li>Suporte técnico a usuários finais, resolvendo chamados técnicos e bugs de hardware e infraestrutura básica.</li>
+                  <li>Colaboração direta com equipes integradas no planejamento e implementação de novos projetos digitais.</li>
+                </ul>
+                <ul class="timeline-list lang-en">
+                  <li>Developed, maintained, and optimized governmental internal web structures and utility systems.</li>
+                  <li>Delivered end-user technical support, troubleshooting hardware, software configurations, and basic network issues.</li>
+                  <li>Collaborated closely in cross-functional squads to roll out new public sector digital services.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Background & Info -->
+        <div>
+          <h2 class="section-heading">
+            <i data-lucide="graduation-cap"></i>
+            <span class="lang-pt">Formação Acadêmica</span>
+            <span class="lang-en">Academic Background</span>
+          </h2>
+
+          <div class="timeline">
+            <!-- Education Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024 - 2027 (<span class="lang-pt">Previsto</span><span class="lang-en">Expected</span>)</div>
+              <div class="glass-panel timeline-card">
+                <h3 class="timeline-title">
+                  <span class="lang-pt">Tecnologia em Análise e Desenvolvimento de Sistemas</span>
+                  <span class="lang-en">Associate Degree in Systems Analysis & Development</span>
+                </h3>
+                <h4 class="timeline-subtitle">IFPE - Instituto Federal de Pernambuco</h4>
+                <p class="timeline-text lang-pt">Foco em engenharia de software, banco de dados, arquiteturas cliente/servidor e automação de sistemas.</p>
+                <p class="timeline-text lang-en">Core studies in Software Engineering, Databases, Client/Server Architectures, and System Automation.</p>
+              </div>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2009</div>
+              <div class="glass-panel timeline-card">
+                <h3 class="timeline-title">
+                  <span class="lang-pt">Ensino Médio</span>
+                  <span class="lang-en">High School Diploma</span>
+                </h3>
+                <h4 class="timeline-subtitle">EREM Maria Vieira Muliterno</h4>
+                <p class="timeline-text lang-pt">Escola de Referência em Ensino Médio.</p>
+                <p class="timeline-text lang-en">State Reference School program focusing on science and computing foundations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding container">
+      <div class="section-header-centered">
+        <h2 class="section-heading-center">
+          <span class="lang-pt">Projetos & Experiências Relevantes</span>
+          <span class="lang-en">Key Projects & Portfolios</span>
+        </h2>
+        <p class="section-lead-text">
+          <span class="lang-pt">Desenvolvimento sustentável, automação de dados e ativos gráficos em 3D.</span>
+          <span class="lang-en">Sustainable developments, digital automation, and 3D graphic asset pipelines.</span>
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Premium Food Market -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-blue">
+            <i data-lucide="shopping-cart" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">Full-Stack</span>
+              <span class="tag">Database</span>
+              <span class="tag">E-commerce</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Premium Food Market</span>
+              <span class="lang-en">Premium Food Market</span>
+            </h3>
+            <span class="project-duration">Active Development / Production Ready</span>
+            <p class="project-text lang-pt">
+              Mercado virtual completo composto por loja cliente responsiva, dashboard de administração com métricas de estoque e vendas em tempo real, integrado com banco de dados Supabase e deploy Vercel.
+            </p>
+            <p class="project-text lang-en">
+              Full-featured online marketplace featuring responsive store front, administrative dashboard for inventory and sales tracking, integrated with Supabase DB schema and Vercel deploys.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">Supabase (PostgreSQL)</span>
+              <span class="skill-badge">JavaScript ES6</span>
+              <span class="skill-badge">Dashboard metrics</span>
+              <span class="skill-badge">Vercel Deploy</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/FerisReptilium/premium-food-market" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código Fonte</span><span class="lang-en">Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Rei do Bolo Chat -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-purple">
+            <i data-lucide="message-square" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">AI Chatbot</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Rei do Bolo Chatbot</span>
+              <span class="lang-en">Rei do Bolo Chatbot</span>
+            </h3>
+            <span class="project-duration">Customer Service Bot System</span>
+            <p class="project-text lang-pt">
+              Chatbot corporativo inteligente voltado ao autoatendimento ao cliente e suporte operacional. Desenvolvido em JavaScript estruturado, testado com módulos ES6 para validação de modelos generativos.
+            </p>
+            <p class="project-text lang-en">
+              Intelligent corporate customer support chatbot system. Engineered using structured JavaScript, integrated and verified with ES6 modular testing routines for generative models.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Generative AI</span>
+              <span class="skill-badge">Modular JS</span>
+              <span class="skill-badge">Client Automations</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://rei-do-bolo.vercel.app/" target="_blank" class="project-link-btn btn-live">
+                <i data-lucide="external-link"></i>
+                <span class="lang-pt">Ver Online</span><span class="lang-en">View Live</span>
+              </a>
+              <a href="https://github.com/FerisReptilium/rei-do-bolo-chat" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: IoT Water Monitoring -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/water_iot.png" alt="IoT Water Project" class="project-img">
+            <div class="project-tags">
+              <span class="tag">IoT</span>
+              <span class="tag">IFPE / PIBEX</span>
+              <span class="tag">Telemetry</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Monitoramento IoT de Qualidade da Água</span>
+              <span class="lang-en">IoT Water Quality Telemetry</span>
+            </h3>
+            <span class="project-duration">Jan/2024 – Dez/2024</span>
+            <p class="project-text lang-pt">
+              Desenvolvimento de sistema de telemetria automatizada em piscicultura familiar. Integração de sensores analógicos de pH, temperatura e turbidez conectados a microcontroladores, transmitindo dados em tempo real.
+            </p>
+            <p class="project-text lang-en">
+              Developed automated water telemetry for family aquaculture. Integrated digital sensors measuring pH, temp, and turbidity levels using microcontrollers to send live stats to analytical dashboards.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">C++ (Arduino)</span>
+              <span class="skill-badge">Microcontrollers</span>
+              <span class="skill-badge">Sensors Data</span>
+              <span class="skill-badge">Eco-Automation</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/FerisReptilium/FerisReptilium" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código Fonte</span><span class="lang-en">Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Copefruta API OSM -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-orange">
+            <i data-lucide="map-pin" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">Python Desktop</span>
+              <span class="tag">OSM Mapping</span>
+              <span class="tag">DevOps Build</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Copefruta API OSM & Automations</span>
+              <span class="lang-en">Copefruta API OSM & Automations</span>
+            </h3>
+            <span class="project-duration">Python Geolocation Desktop Suite</span>
+            <p class="project-text lang-pt">
+              Software de integração com OpenStreetMap e serviços REST para análise geográfica de rotas. Equipado com scripts automatizados em PowerShell para empacotamento executável (.EXE) e ambiente virtual isolado.
+            </p>
+            <p class="project-text lang-en">
+              Desktop suite integrating OpenStreetMap and REST services for geospatial route planning. Features custom PowerShell build pipelines to compile binary distributions (.EXE) from python code.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">Python Backend</span>
+              <span class="skill-badge">OpenStreetMap API</span>
+              <span class="skill-badge">PyInstaller SPEC</span>
+              <span class="skill-badge">PowerShell Automation</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/FerisReptilium/copefruta_api_osm" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código Fonte</span><span class="lang-en">Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Bolo Delícia Label -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-green">
+            <i data-lucide="printer" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">Frontend Tool</span>
+              <span class="tag">Label Generator</span>
+              <span class="tag">SVG/Print</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Bolo Delícia Label</span>
+              <span class="lang-en">Bolo Delícia Label</span>
+            </h3>
+            <span class="project-duration">Graphic Generator Tool</span>
+            <p class="project-text lang-pt">
+              Aplicação web dedicada ao design, parametrização e exportação de rótulos e etiquetas de embalagens de bolos tradicionais e premium, otimizada para impressões térmicas de alta qualidade.
+            </p>
+            <p class="project-text lang-en">
+              Web application engineered for customizable drafting, rendering, and dynamic exporting of packaging labels for traditional and premium cake products, tailored for clean thermal printing.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">HTML5/Canvas</span>
+              <span class="skill-badge">CSS Print layout</span>
+              <span class="skill-badge">Dynamic parameters</span>
+              <span class="skill-badge">Export Engine</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ferisreptilium.github.io/bolo_delicia_label/" target="_blank" class="project-link-btn btn-live">
+                <i data-lucide="external-link"></i>
+                <span class="lang-pt">Ver Online</span><span class="lang-en">View Live</span>
+              </a>
+              <a href="https://github.com/FerisReptilium/bolo_delicia_label" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: 3D Character Modeler -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/daz_3d_render.png" alt="3D Modeling Portfolio" class="project-img">
+            <div class="project-tags">
+              <span class="tag">3D Art</span>
+              <span class="tag">Daz Studio</span>
+              <span class="tag">Asset Creation</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Modelagem 3D & Asset Creation</span>
+              <span class="lang-en">3D Character & Asset Design</span>
+            </h3>
+            <span class="project-duration">Jan/2025 – Mar/2025</span>
+            <p class="project-text lang-pt">
+              Modelagem de personagens realistas e cenários digitais interativos no Daz Studio. Foco em produção de assets otimizados para simulações e renderização avançada com iluminação de estúdio física.
+            </p>
+            <p class="project-text lang-en">
+              Created photorealistic character concepts and environmental virtual assets in Daz Studio. Textured, mapped, and configured realistic physical lighting nodes, generating game assets.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">Daz Studio</span>
+              <span class="skill-badge">PBR Texturing</span>
+              <span class="skill-badge">Physical Lighting</span>
+              <span class="skill-badge">HD Rendering</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/FerisReptilium/FerisReptilium" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código Fonte</span><span class="lang-en">Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Boomikids -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-blue">
+            <i data-lucide="smile" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">UX/UI design</span>
+              <span class="tag">Responsive</span>
+              <span class="tag">Kids Portal</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Boomikids Portal</span>
+              <span class="lang-en">Boomikids Portal</span>
+            </h3>
+            <span class="project-duration">Interactive Frontend Project</span>
+            <p class="project-text lang-pt">
+              Portal web educacional responsivo e lúdico para o público infantil. Construído com layouts fluidos, cores alegres e micro-interações para garantir uma experiência de navegação segura e engajante.
+            </p>
+            <p class="project-text lang-en">
+              Responsive and playful educational web portal designed for children. Engineered with fluid layouts, vibrant color configurations, and micro-interactions securing a safe and engaging UX.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">Semantic HTML5</span>
+              <span class="skill-badge">CSS Flexbox/Grid</span>
+              <span class="skill-badge">Vanilla JS</span>
+              <span class="skill-badge">UX Design Patterns</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ferisreptilium.github.io/boomikids/" target="_blank" class="project-link-btn btn-live">
+                <i data-lucide="external-link"></i>
+                <span class="lang-pt">Ver Online</span><span class="lang-en">View Live</span>
+              </a>
+              <a href="https://github.com/FerisReptilium/boomikids" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Chronus -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-purple">
+            <i data-lucide="clock" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">Productivity</span>
+              <span class="tag">Time Tracker</span>
+              <span class="tag">State Storage</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Chronus Time Manager</span>
+              <span class="lang-en">Chronus Time Manager</span>
+            </h3>
+            <span class="project-duration">Interactive Web Productivity Tool</span>
+            <p class="project-text lang-pt">
+              Dashboard de produtividade pessoal e controle operacional de rotinas. Possibilita cronometragem e categorização de atividades de desenvolvimento com persistência local de dados.
+            </p>
+            <p class="project-text lang-en">
+              Productivity tracker dashboard for operations management. Enables real-time stopwatch logging and category mapping of developer tasks with local data storage persistence.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">State Management</span>
+              <span class="skill-badge">CSS custom inputs</span>
+              <span class="skill-badge">Local Storage API</span>
+              <span class="skill-badge">Productivity Metrics</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ferisreptilium.github.io/chronus/" target="_blank" class="project-link-btn btn-live">
+                <i data-lucide="external-link"></i>
+                <span class="lang-pt">Ver Online</span><span class="lang-en">View Live</span>
+              </a>
+              <a href="https://github.com/FerisReptilium/chronus" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Lar das Delícias -->
+        <div class="project-card">
+          <div class="project-img-wrapper tech-header gradient-orange">
+            <i data-lucide="cake" class="project-tech-icon"></i>
+            <div class="project-tags">
+              <span class="tag">Web Catalog</span>
+              <span class="tag">Confectionery</span>
+              <span class="tag">Vercel Deploy</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <span class="lang-pt">Lar das Delícias</span>
+              <span class="lang-en">Lar das Delícias</span>
+            </h3>
+            <span class="project-duration">Active Production Site</span>
+            <p class="project-text lang-pt">
+              Plataforma web gastronômica voltada à apresentação, catálogo digital e captação de pedidos de doces e salgados artesanais, com interface responsiva de alta conversão.
+            </p>
+            <p class="project-text lang-en">
+              Gastronomic web application built for digital cataloging, showcasing, and order capture of artisanal pastries and savory products, featuring a highly-optimized responsive conversion UI.
+            </p>
+            <div class="project-skills-list">
+              <span class="skill-badge">Responsive Design</span>
+              <span class="skill-badge">Vanilla JS</span>
+              <span class="skill-badge">UX Confectionery</span>
+              <span class="skill-badge">Vercel Hosting</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://lar-das-delicias.vercel.app/" target="_blank" class="project-link-btn btn-live">
+                <i data-lucide="external-link"></i>
+                <span class="lang-pt">Ver Online</span><span class="lang-en">View Live</span>
+              </a>
+              <a href="https://github.com/FerisReptilium/lar-das-delicias" target="_blank" class="project-link-btn">
+                <i data-lucide="github"></i>
+                <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Additional Info -->
+    <section id="certifications" class="section-padding container">
+      <div class="timeline-section-grid">
+        <!-- Certifications -->
+        <div class="glass-panel cert-panel">
+          <h2 class="section-heading">
+            <i data-lucide="award"></i>
+            <span class="lang-pt">Cursos & Certificações</span>
+            <span class="lang-en">Courses & Certifications</span>
+          </h2>
+          <div class="cert-list">
+            <!-- AWS Cert 1 -->
+            <div class="cert-item">
+              <div class="cert-icon-wrapper aws-cert-badge">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="cert-info">
+                <h3>AWS Certified Cloud Practitioner</h3>
+                <p class="issuer">Amazon Web Services (AWS)</p>
+              </div>
+            </div>
+
+            <!-- AWS Cert 2 -->
+            <div class="cert-item">
+              <div class="cert-icon-wrapper aws-cert-badge">
+                <i data-lucide="file-badge"></i>
+              </div>
+              <div class="cert-info">
+                <h3>AWS Certified Developer</h3>
+                <p class="issuer">Escola da Nuvem</p>
+              </div>
+            </div>
+
+            <!-- Cloud fundamentals -->
+            <div class="cert-item">
+              <div class="cert-icon-wrapper regular-cert-badge">
+                <i data-lucide="cloud-lightning"></i>
+              </div>
+              <div class="cert-info">
+                <h3><span class="lang-pt">Fundamentos de Cloud e AWS</span><span class="lang-en">Cloud Computing & AWS Foundations</span></h3>
+                <p class="issuer">Escola da Nuvem</p>
+              </div>
+            </div>
+
+            <!-- IoT cert -->
+            <div class="cert-item">
+              <div class="cert-icon-wrapper regular-cert-badge">
+                <i data-lucide="cpu"></i>
+              </div>
+              <div class="cert-info">
+                <h3><span class="lang-pt">IoT e Automação para Monitoramento Ambiental</span><span class="lang-en">IoT & Automation for Environmental Tracking</span></h3>
+                <p class="issuer">IFPE</p>
+              </div>
+            </div>
+
+            <!-- Microbiology -->
+            <div class="cert-item">
+              <div class="cert-icon-wrapper regular-cert-badge">
+                <i data-lucide="flask"></i>
+              </div>
+              <div class="cert-info">
+                <h3><span class="lang-pt">Auxiliar de Laboratório de Microbiologia</span><span class="lang-en">Microbiology Laboratory Assistant</span></h3>
+                <p class="issuer">SENAI | 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="glass-panel cert-panel">
+          <h2 class="section-heading">
+            <i data-lucide="info"></i>
+            <span class="lang-pt">Informações Adicionais</span>
+            <span class="lang-en">Additional Details</span>
+          </h2>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <i data-lucide="check-circle-2"></i>
+              <div>
+                <h4><span class="lang-pt">Disponibilidade de Trabalho</span><span class="lang-en">Work Arrangements</span></h4>
+                <p class="lang-pt">Total flexibilidade para atuar de forma Presencial (São Paulo/SP), Híbrida ou Remota.</p>
+                <p class="lang-en">Completely open to On-Site (São Paulo, Brazil), Hybrid, or Remote opportunities.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i data-lucide="compass"></i>
+              <div>
+                <h4><span class="lang-pt">Áreas de Maior Interesse</span><span class="lang-en">Target Focus Fields</span></h4>
+                <p>Cloud Engineering, DevOps Pipelines, Data Engineering, IoT Systems.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i data-lucide="users"></i>
+              <div>
+                <h4><span class="lang-pt">Engajamento Comunitário</span><span class="lang-en">Community Engagement</span></h4>
+                <p class="lang-pt">Participação contínua em eventos acadêmicos, fóruns de DevOps e maratonas técnicas.</p>
+                <p class="lang-en">Active presence in academic seminars, open-source DevOps threads, and tech hackathons.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i data-lucide="leaf"></i>
+              <div>
+                <h4><span class="lang-pt">Foco em Sustentabilidade</span><span class="lang-en">Sustainability Focused</span></h4>
+                <p class="lang-pt">Pesquisa aplicada no cruzamento entre tecnologias digitais emergentes e impacto ecológico sustentável.</p>
+                <p class="lang-en">Researching sustainable ways to deploy scalable, high-performance tech to reduce carbon footprints.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Contact Form / Banner -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-cta">
+        <h2 class="footer-cta-title">
+          <span class="lang-pt">Vamos construir algo inovador juntos?</span>
+          <span class="lang-en">Let's build something great together</span>
+        </h2>
+        <p class="footer-cta-desc">
+          <span class="lang-pt">Entre em contato direto por e-mail ou redes sociais para parcerias e vagas.</span>
+          <span class="lang-en">Get in touch directly for engineering roles, technical advisory, or collaboration.</span>
+        </p>
+      </div>
+      <div class="footer-contact-links">
+        <a href="mailto:felipewolf.recife@gmail.com" class="btn btn-primary">
+          <i data-lucide="mail"></i>
+          <span>felipewolf.recife@gmail.com</span>
+        </a>
+        <a href="https://wa.me/5511921909149" target="_blank" class="btn btn-outline">
+          <i data-lucide="message-square"></i>
+          <span>WhatsApp (11) 92190-9149</span>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Felipe da Silva Ribeiro. <span class="lang-pt">Todos os direitos reservados.</span><span class="lang-en">All rights reserved.</span></p>
+        <div class="footer-qrcode-wrapper">
+          <span class="lang-pt">Portfólio Digital:</span>
+          <span class="lang-en">Digital Portfolio:</span>
+          <img src="assets/qrcode.png" alt="QR Code" class="footer-qrcode">
+        </div>
+        <div class="footer-print-note">
+          <span class="lang-pt">Impresso a partir do Portfólio Digital. Acesse online no GitHub.</span>
+          <span class="lang-en">Printed from digital web portfolio. Access interactive version online on GitHub.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
