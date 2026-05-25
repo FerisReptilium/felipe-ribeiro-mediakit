@@ -1495,13 +1495,41 @@ body.lang-en .en-flag { display: block; }
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px !important;
+  }
+
   .section-padding {
     padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem !important;
   }
 
   .projects-grid {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .skill-card {
+    padding: 20px 16px !important;
+  }
+
+  .academic-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
   }
 
   .nav {
@@ -1526,20 +1554,30 @@ body.lang-en .en-flag { display: block; }
     margin: 0 auto 32px;
   }
 
+  .contact-card {
+    padding: 12px 14px !important;
+    gap: 12px !important;
+  }
+
+  .contact-card-info .value {
+    font-size: 0.82rem !important;
+  }
+
   .hero-buttons {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .photo-frame-container {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 
   .badge-aws { left: -10px; }
   .badge-iot { right: -15px; }
 
   .summary-panel {
-    padding: 24px;
+    padding: 24px 16px;
   }
 
   .summary-highlights {
@@ -1555,6 +1593,7 @@ body.lang-en .en-flag { display: block; }
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    gap: 16px;
   }
 
   .btn-print {
